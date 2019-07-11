@@ -3,6 +3,8 @@ const foodsController = require("../../controllers/foodsController");
 
 // Matches with "/api/foods"
 router.route("/").get(foodsController.findAll);
+// Matches with "/api/foods"
+router.route("/seed").get(foodsController.seedDb);
 
 // Matches with "/api/foods/:id"
 router
