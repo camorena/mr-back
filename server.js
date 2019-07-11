@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/foodApp");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://camoren:Datelica2019@ds151007.mlab.com:51007/heroku_v040vd4w");
 
 app.get("/heartbeat", (req, res) =>
   res.send({
